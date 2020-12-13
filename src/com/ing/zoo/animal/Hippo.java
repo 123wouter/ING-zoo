@@ -7,9 +7,9 @@ public class Hippo implements Animal, Herbivoor {
     public String helloText;
     public String eatText;
 
-    public Hippo()
+    public Hippo(String name)
     {
-        super();
+        this.name = name;
     }
 
     public void sayHello()

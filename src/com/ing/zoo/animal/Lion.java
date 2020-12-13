@@ -7,8 +7,9 @@ public class Lion implements Animal, Carnivoor {
     public String helloText;
     public String eatText;
 
-    public Lion()
+    public Lion(String name)
     {
+        this.name = name;
     }
 
     public void sayHello()

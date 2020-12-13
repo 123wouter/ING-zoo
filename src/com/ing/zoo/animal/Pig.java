@@ -10,8 +10,9 @@ public class Pig implements CircusAnimal, Omnivoor {
     public String eatText;
     public String trick;
 
-    public Pig()
+    public Pig(String name)
     {
+        this.name = name;
     }
 
     public void sayHello()

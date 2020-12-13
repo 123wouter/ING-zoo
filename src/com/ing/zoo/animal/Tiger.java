@@ -10,8 +10,9 @@ public class Tiger implements CircusAnimal, Carnivoor {
     public String eatText;
     public String trick;
 
-    public Tiger()
+    public Tiger(String name)
     {
+        this.name = name;
     }
 
     public void sayHello()
