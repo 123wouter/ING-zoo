@@ -2,14 +2,13 @@ package com.ing.zoo.animal;
 
 import com.ing.zoo.food.type.Carnivoor;
 
-public class Lion implements Animal, Carnivoor {
-    public String name;
+public class Lion extends Animal implements Carnivoor {
     public String helloText;
     public String eatText;
 
     public Lion(String name)
     {
-        this.name = name;
+        super(name);
     }
 
     public void sayHello()

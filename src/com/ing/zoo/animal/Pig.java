@@ -4,15 +4,14 @@ import com.ing.zoo.food.type.Omnivoor;
 
 import java.util.Random;
 
-public class Pig implements CircusAnimal, Omnivoor {
-    public String name;
+public class Pig extends CircusAnimal implements Omnivoor {
     public String helloText;
     public String eatText;
     public String trick;
 
     public Pig(String name)
     {
-        this.name = name;
+        super(name);
     }
 
     public void sayHello()

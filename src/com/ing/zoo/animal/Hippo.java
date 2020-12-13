@@ -2,14 +2,13 @@ package com.ing.zoo.animal;
 
 import com.ing.zoo.food.type.Herbivoor;
 
-public class Hippo implements Animal, Herbivoor {
-    public String name;
+public class Hippo extends Animal implements Herbivoor {
     public String helloText;
     public String eatText;
 
     public Hippo(String name)
     {
-        this.name = name;
+        super(name);
     }
 
     public void sayHello()

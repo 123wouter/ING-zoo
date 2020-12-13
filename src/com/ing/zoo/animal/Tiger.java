@@ -4,15 +4,14 @@ import com.ing.zoo.food.type.Carnivoor;
 
 import java.util.Random;
 
-public class Tiger implements CircusAnimal, Carnivoor {
-    public String name;
+public class Tiger extends CircusAnimal implements Carnivoor {
     public String helloText;
     public String eatText;
     public String trick;
 
     public Tiger(String name)
     {
-        this.name = name;
+        super(name);
     }
 
     public void sayHello()
