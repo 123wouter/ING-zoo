@@ -2,6 +2,7 @@ package com.ing.zoo;
 
 import com.ing.zoo.animal.*;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Zoo {
@@ -23,8 +24,23 @@ public class Zoo {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
+        String input = scanner.nextLine().toLowerCase();
 
-        String input = scanner.nextLine();
+        //todo command handler?
+        for (String command: commands){
+            if (input.equals(command)){
+                //todo perform command
+            }
+        }
+
+        String[] inputParameters = input.split(" ");
+        if(inputParameters[0].equals("hello")){
+            for(Animal animal: zoo){
+                if(animal.name.equals(inputParameters[0])){
+                    animal.sayHello();
+                }
+            }
+        }
         // todo functie die command en naam schijd
         if(input.equals(commands[0] + " henk"))
         {
