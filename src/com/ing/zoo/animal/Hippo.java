@@ -1,6 +1,6 @@
 package com.ing.zoo.animal;
 
-import com.ing.zoo.food.types.Herbivoor;
+import com.ing.zoo.food.type.Herbivoor;
 
 public class Hippo implements Animal, Herbivoor {
     public String name;

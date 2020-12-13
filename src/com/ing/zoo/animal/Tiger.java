@@ -1,7 +1,6 @@
 package com.ing.zoo.animal;
 
-import com.ing.zoo.food.MeatFood;
-import com.ing.zoo.food.types.Carnivoor;
+import com.ing.zoo.food.type.Carnivoor;
 
 import java.util.Random;
 

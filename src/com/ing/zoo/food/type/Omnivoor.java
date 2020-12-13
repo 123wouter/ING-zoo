@@ -1,4 +1,4 @@
-package com.ing.zoo.food.types;
+package com.ing.zoo.food.type;
 
 import com.ing.zoo.food.*;
 

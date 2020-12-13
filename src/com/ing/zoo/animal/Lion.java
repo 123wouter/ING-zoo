@@ -1,6 +1,6 @@
 package com.ing.zoo.animal;
 
-import com.ing.zoo.food.types.Carnivoor;
+import com.ing.zoo.food.type.Carnivoor;
 
 public class Lion implements Animal, Carnivoor {
     public String name;
