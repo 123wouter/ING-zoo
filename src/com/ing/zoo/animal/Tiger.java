@@ -1,8 +1,11 @@
 package com.ing.zoo.animal;
 
+import com.ing.zoo.food.MeatFood;
+import com.ing.zoo.food.types.Carnivoor;
+
 import java.util.Random;
 
-public class Tiger implements CircusAnimal {
+public class Tiger implements CircusAnimal, Carnivoor {
     public String name;
     public String helloText;
     public String eatText;

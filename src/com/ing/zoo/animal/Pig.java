@@ -1,8 +1,10 @@
 package com.ing.zoo.animal;
 
+import com.ing.zoo.food.types.Omnivoor;
+
 import java.util.Random;
 
-public class Pig implements CircusAnimal {
+public class Pig implements CircusAnimal, Omnivoor {
     public String name;
     public String helloText;
     public String eatText;
