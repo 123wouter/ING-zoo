@@ -1,5 +1,7 @@
 package com.ing.zoo;
 
+import com.ing.zoo.animal.*;
+
 import java.util.Scanner;
 
 public class Zoo {
@@ -10,6 +12,8 @@ public class Zoo {
         commands[1] = "give leaves";
         commands[2] = "give meat";
         commands[3] = "perform trick";
+
+        Animal[] zoo = new Animal[5];
 
         Lion henk = new Lion();
         henk.name = "henk";
@@ -26,6 +30,7 @@ public class Zoo {
         System.out.print("Voer uw command in: ");
 
         String input = scanner.nextLine();
+        // todo functie die command en naam schijd
         if(input.equals(commands[0] + " henk"))
         {
             henk.sayHello();

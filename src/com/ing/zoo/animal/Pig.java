@@ -2,7 +2,7 @@ package com.ing.zoo.animal;
 
 import java.util.Random;
 
-public class Pig implements Animal {
+public class Pig implements CircusAnimal {
     public String name;
     public String helloText;
     public String eatText;
