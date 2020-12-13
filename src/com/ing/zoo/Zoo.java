@@ -15,11 +15,11 @@ public class Zoo {
 
         Animal[] zoo = new Animal[5];
 
-        Animal henk = new Lion("henk");
-        Animal elsa = new Hippo("elsa");
-        Animal dora = new Pig("dora");
-        Animal wally = new Tiger("wally");
-        Animal marty = new Zebra("marty");
+        zoo[0] = new Lion("henk");
+        zoo[1] = new Hippo("elsa");
+        zoo[2] = new Pig("dora");
+        zoo[3] = new Tiger("wally");
+        zoo[4] = new Zebra("marty");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
@@ -28,7 +28,7 @@ public class Zoo {
         // todo functie die command en naam schijd
         if(input.equals(commands[0] + " henk"))
         {
-            henk.sayHello();
+            zoo[1].sayHello();
         }
         else
         {
