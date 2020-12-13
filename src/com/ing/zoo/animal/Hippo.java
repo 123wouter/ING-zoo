@@ -1,12 +1,13 @@
-package com.ing.zoo;
+package com.ing.zoo.animal;
 
-public class Hippo {
+public class Hippo implements Animal {
     public String name;
     public String helloText;
     public String eatText;
 
     public Hippo()
     {
+        super();
     }
 
     public void sayHello()

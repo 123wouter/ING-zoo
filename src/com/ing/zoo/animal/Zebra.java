@@ -1,8 +1,6 @@
-package com.ing.zoo;
+package com.ing.zoo.animal;
 
-import java.util.Random;
-
-public class Zebra {
+public class Zebra implements Animal {
     public String name;
     public String helloText;
     public String eatText;

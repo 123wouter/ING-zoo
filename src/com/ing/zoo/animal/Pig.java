@@ -1,8 +1,8 @@
-package com.ing.zoo;
+package com.ing.zoo.animal;
 
 import java.util.Random;
 
-public class Pig {
+public class Pig implements Animal {
     public String name;
     public String helloText;
     public String eatText;
