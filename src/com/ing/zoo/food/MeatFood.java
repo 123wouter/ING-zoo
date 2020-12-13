@@ -1,5 +1,5 @@
 package com.ing.zoo.food;
 
-public interface Meat extends Food {
+public interface MeatFood extends Food {
     public void eatMeat();
 }
