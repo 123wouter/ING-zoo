@@ -15,11 +15,11 @@ public class Zoo {
 
         Animal[] zoo = new Animal[5];
 
-        Lion henk = new Lion("henk");
-        Hippo elsa = new Hippo("elsa");
-        Pig dora = new Pig("dora");
-        Tiger wally = new Tiger("wally");
-        Zebra marty = new Zebra("marty");
+        Animal henk = new Lion("henk");
+        Animal elsa = new Hippo("elsa");
+        Animal dora = new Pig("dora");
+        Animal wally = new Tiger("wally");
+        Animal marty = new Zebra("marty");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
