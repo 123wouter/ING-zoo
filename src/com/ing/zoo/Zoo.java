@@ -1,6 +1,11 @@
 package com.ing.zoo;
 
 import com.ing.zoo.animal.*;
+import com.ing.zoo.food.LeavesFood;
+import com.ing.zoo.food.MeatFood;
+import com.ing.zoo.food.type.Carnivoor;
+import com.ing.zoo.food.type.Herbivoor;
+import com.ing.zoo.food.type.Omnivoor;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -26,28 +31,45 @@ public class Zoo {
         System.out.print("Voer uw command in: ");
         String input = scanner.nextLine().toLowerCase();
 
-        //todo command handler?
-        for (String command: commands){
-            if (input.equals(command)){
-                //todo perform command
-            }
-        }
+        //todo zet dit in een command handler?
 
         String[] inputParameters = input.split(" ");
-        if(inputParameters[0].equals("hello")){
-            for(Animal animal: zoo){
-                if(animal.name.equals(inputParameters[0])){
+
+        if(inputParameters[0].equals(commands[0])){
+            if (inputParameters[1] != null){
+                for(Animal animal: zoo){
+                    if(animal.name.equals(inputParameters[1])){
+                        animal.sayHello();
+                    }
+                }
+            } else{
+                for(Animal animal: zoo){
                     animal.sayHello();
                 }
             }
         }
-        // todo functie die command en naam schijd
-        if(input.equals(commands[0] + " henk"))
-        {
-            zoo[1].sayHello();
+        else if(input.equals(commands[1])){
+            for(Animal animal: zoo){
+                if(animal instanceof Herbivoor || animal instanceof Omnivoor){
+                    ((LeavesFood) animal).eatLeaves();
+                }
+            }
         }
-        else
-        {
+        else if(input.equals(commands[2])){
+            for(Animal animal: zoo){
+                if(animal instanceof Carnivoor || animal instanceof Omnivoor){
+                    ((MeatFood) animal).eatMeat();
+                }
+            }
+        }
+        else if(input.equals(commands[3])){
+            for(Animal animal: zoo){
+                if(animal instanceof CircusAnimal){
+                    ((CircusAnimal) animal).performTrick();
+                }
+            }
+        }
+        else{
             System.out.println("Unknown command: " + input);
         }
     }
