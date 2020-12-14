@@ -24,7 +24,7 @@ public class Zoo {
         zoo[3] = new Tiger("wally");
         zoo[4] = new Zebra("marty");
         zoo[5] = new Dog("bella");
-        zoo[7] = new Duck("zoe");
+        zoo[6] = new Duck("zoe");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
@@ -35,13 +35,14 @@ public class Zoo {
         String[] inputParameters = input.split(" ");
 
         if(inputParameters[0].equals(commands[0])){
-            if (inputParameters[1] != null){
+            if (inputParameters.length == 2){
                 for(Animal animal: zoo){
                     if(animal.name.equals(inputParameters[1])){
                         animal.sayHello();
                     }
                 }
-            } else{
+            } 
+            if (inputParameters.length == 1){
                 for(Animal animal: zoo){
                     animal.sayHello();
                 }
