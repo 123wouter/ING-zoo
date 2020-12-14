@@ -3,11 +3,8 @@ package com.ing.zoo;
 import com.ing.zoo.animal.*;
 import com.ing.zoo.food.LeavesFood;
 import com.ing.zoo.food.MeatFood;
-import com.ing.zoo.food.type.Carnivoor;
-import com.ing.zoo.food.type.Herbivoor;
-import com.ing.zoo.food.type.Omnivoor;
+import com.ing.zoo.food.type.*;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Zoo {
@@ -19,13 +16,15 @@ public class Zoo {
         commands[2] = "give meat";
         commands[3] = "perform trick";
 
-        Animal[] zoo = new Animal[5];
+        Animal[] zoo = new Animal[7];
 
         zoo[0] = new Lion("henk");
         zoo[1] = new Hippo("elsa");
         zoo[2] = new Pig("dora");
         zoo[3] = new Tiger("wally");
         zoo[4] = new Zebra("marty");
+        zoo[5] = new Dog("bella");
+        zoo[7] = new Duck("zoe");
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
